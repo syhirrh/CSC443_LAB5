@@ -8,7 +8,7 @@
 </head>
 <body>
 <?php
-    $month = array ('January', 'February', 'March', 'April','May', 'June', 'July', 'August', 'September', 'October', 'November', 'December');     
+    $month = array ("January", "February", "March", "April","May", "June", "July", "August", "September", "October", "November", "December");     
     sort($month);
     foreach($month as $key => $val)
     {
