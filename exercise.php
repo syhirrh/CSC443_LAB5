@@ -26,8 +26,8 @@
             }
             $totdays += $xval;
         }
-     echo "The number of days in the shortest month is $minval.
-     <br>The name of the shortest month is $minmonth.<br>Total number of days in a year are $totdays.";
+     echo "The number of days in the shortest month is $minval
+     <br>The name of the shortest month is $minmonth<br>Total number of days in a year are $totdays";
 
 ?>
 </body>
