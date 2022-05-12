@@ -15,23 +15,23 @@ $monthDays = array ("January"  => 31 , "February"  => 30 ,
                     "September"  => 30 , "October"  => 31 , 
                     "November"  => 30 , "December"  => 31 );
 
-        echo "<table border='1'><tr><th>Months</th><th>Days</th></tr>";
-        foreach($monthDays as $x => $xval)
-        {
-            if($xval == 30)
+            $month30 = array();
+            echo "<h2>Months around the year</h2><table border='1'><tr><th>Month</th><th>Days</th></tr>";
+            foreach($monthDays as $x => $xval)
             {
                 echo "<tr><td>".$x."</td><td>".$xval."</td></tr>";
+                
+                if($xval == 30)
+                {
+                    array_push($month30, $x);
+                }
             }
-            else
+            
+            echo "</table><br><br><h2>Months with 30 days</h2>";
+            foreach($month30 as $v)
             {
-                echo "<tr><td>".$x."</td><td>".$xval."</td></tr>";
+                echo $v."<br>";
             }
-        }
-        echo "</table><br><br><h2>Months with 30 days</h2>";
-        foreach($month30 as $v)
-        {
-            echo $v."<br>";
-        }
 
 ?>
 
