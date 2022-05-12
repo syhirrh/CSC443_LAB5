@@ -15,10 +15,14 @@ $monthDays = array ("January"  => 31 , "February"  => 30 ,
                     "September"  => 30 , "October"  => 31 , 
                     "November"  => 30 , "December"  => 31 );
 
-        echo "<table border='1'><tr><th>Month</th><th>Days</th></tr>";
+        echo "<table border='1'><tr><th>Months</th><th>Days</th></tr>";
         foreach($monthDays as $x => $xval)
         {
-            if($xval == 30 && $xval == 31)
+            if($xval == 30)
+            {
+                echo "<tr><td>".$x."</td><td>".$xval."</td></tr>";
+            }
+            else
             {
                 echo "<tr><td>".$x."</td><td>".$xval."</td></tr>";
             }
