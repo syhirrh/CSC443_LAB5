@@ -12,7 +12,6 @@
         'May', 'June', 'July', 'August', 'September', 
         'October', 'November', 'December');     
     
-    $len = count($month);
     for($i=0; $i<=11; $i++)
     {
        echo $month[$i] ."\n";
