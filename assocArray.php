@@ -29,15 +29,11 @@ $monthDays = array ("January"  => 31 , "February"  => 30 ,
         }
         echo "</table>";
 
-        echo "<table border='1'><tr><th>Months</th><th>Days</th></tr>";
-        foreach($monthDays as $x => $xval)
+        echo "</table><br><br><h2>Months with 30 days</h2>";
+        foreach($month30 as $v)
         {
-            if($xval == 30)
-            {
-                echo "<tr><td>".$x."</td><td>".$xval."</td></tr>";
-            }
+            echo $v."<br>";
         }
-        echo "</table>";
 
 ?>
 
