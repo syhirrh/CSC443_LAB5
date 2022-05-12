@@ -10,6 +10,12 @@
 <?php
     $month = array ("January", "February", "March", "April","May", "June", "July", "August", "September", "October", "November", "December");     
     sort($month);
+
+    for($i=0; $i<=11; $i++)
+    {
+        echo $month[$i] . "\n";
+    }
+    
     foreach($month as $key => $val)
     {
        echo "The value of key $key is: $val<br>";
