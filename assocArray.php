@@ -33,9 +33,11 @@ $monthDays = array ("January"  => 31 , "February"  => 30 ,
         {
             if($xval == 30)
             {
-                echo "The months with 30 days are $x"
+                echo "<tr><td>".$x."</td><td>".$xval."</td></tr>";
             }
         }
+        echo "</table>";
+
 ?>
 
 </body>
