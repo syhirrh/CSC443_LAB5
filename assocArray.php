@@ -18,7 +18,7 @@ $monthDays = array ("January"  => 31 , "February"  => 30 ,
         echo "<table border='1'><tr><th>Month</th><th>Days</th></tr>";
         foreach($monthDays as $x => $xval)
         {
-            if($xval => 30)
+            if($xval == 30 && $xval == 31)
             {
                 echo "<tr><td>".$x."</td><td>".$xval."</td></tr>";
             }
