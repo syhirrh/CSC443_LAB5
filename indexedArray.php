@@ -12,7 +12,7 @@
     sort($month);
     foreach($month as $key => $val)
     {
-       echo "$key=$val\n";
+       echo "The value of key $key is: $val<br>";
     }
 
 ?>
