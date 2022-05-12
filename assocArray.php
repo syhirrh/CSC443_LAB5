@@ -27,8 +27,6 @@ $monthDays = array ("January"  => 31 , "February"  => 30 ,
                 echo "<tr><td>".$x."</td><td>".$xval."</td></tr>";
             }
         }
-        echo "</table>";
-
         echo "</table><br><br><h2>Months with 30 days</h2>";
         foreach($month30 as $v)
         {
