@@ -28,6 +28,14 @@ $monthDays = array ("January"  => 31 , "February"  => 30 ,
             }
         }
         echo "</table>";
+
+        foreach($monthDays as $x => $xval)
+        {
+            if($xval == 30)
+            {
+                echo "The months with 30 days are $x"
+            }
+        }
 ?>
 
 </body>
